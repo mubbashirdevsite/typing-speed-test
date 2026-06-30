@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="container">
+
+    <header>
+        <h1>⌨️ Typing Speed Test</h1>
+        <p>Improve your typing speed and accuracy</p>
+    </header>
+
+    <!-- Controls -->
+    <section class="controls">
+
+        <select id="timeSelect">
+            <option value="30">30 Seconds</option>
+            <option value="60" selected>60 Seconds</option>
+            <option value="120">120 Seconds</option>
+        </select>
+
+        <button id="startBtn">Start Test</button>
+        <button id="restartBtn">Restart</button>
+
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+
+        <div>WPM: <span id="wpm">0</span></div>
+        <div>CPM: <span id="cpm">0</span></div>
+        <div>Accuracy: <span id="accuracy">0%</span></div>
+        <div>Time: <span id="time">60</span></div>
+
+    </section>
+
+    <!-- Progress -->
+    <div class="progress">
+        <div id="progressBar"></div>
+    </div>
+
+    <!-- Text -->
+    <section class="text-box">
+        <p id="textDisplay"></p>
+    </section>
+
+    <!-- Input -->
+    <textarea id="inputBox" placeholder="Start typing here..." disabled></textarea>
+
+    <!-- Result -->
+    <section id="result"></section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
